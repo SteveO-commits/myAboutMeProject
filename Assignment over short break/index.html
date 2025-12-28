@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stephanie Onyedineke — 300L Computer Science Student</title>
+  <meta name="description" content="About you page" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Go to top">
+        <img src="img/logo.svg" alt="logo" class="logo__mark" />
+        <span class="logo__text">
+          <span class="logo__name">Stephanie Onyedineke</span>
+          <span class="logo__role">300L Computer Science Student</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <button id="themeBtn" class="themeBtn" type="button" aria-label="Toggle theme">Theme</button>
+      </nav>
+
+      <!-- this below is for the hamburger button. Beware, it only shows on tablet or mobile phone users. -->
+      <button id="menuBtn" class="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobileNav" class="mobileNav" hidden>
+      <div class="container mobileNav__inner">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1>Hi, I'm Stephanie — a Computer Science student currently studying at Bowen University.</h1>
+          <p class="lead">
+            I enjoy web development and designing. This website is a simple portfolio I
+            built using HTML, CSS, and JavaScript.
+          </p>
+
+          <div class="cta">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <!-- facts section -->
+          <ul class="quickFacts" aria-label="Quick facts">
+            <li><strong>Level:</strong> 300L</li>
+            <li><strong>Track:</strong> Web + Design</li>
+            <li><strong>Tools:</strong> HTML/CSS/JS</li>
+          </ul>
+        </div>
+
+        <aside class="hero__card" aria-label="Profile card">
+          <div class="card">
+            <div class="card__top">
+              <img class="avatar" src="img/avatar-photo.jpeg" alt="Avatar icon" />
+              <div>
+                <div class="card__name">Stephanie Onyedineke</div>
+                <div class="card__sub">Computer Science • 300 Level</div>
+              </div>
+            </div>
+
+            <div class="card__body">
+              <p class="muted">
+                I'm currently improving my skills in front-end development and work on building small projects in my free time.
+              </p>
+
+              <div class="pillRow" aria-label="Interests">
+                <span class="pill">Web Dev</span>
+                <span class="pill">UI</span>
+              </div>
+
+              <!-- my CV -->
+              <div class="card__actions">
+                <button id="copyBio" class="btn btn--ghost btn--full" type="button">Copy short bio</button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="grid2">
+          <div class="panel">
+            <h3>Who I am</h3>
+            <p class="muted">
+              I'm a 300 level Computer Science student interested in practical software development. I like building
+              clean user interfaces and writing code that's easy to understand.
+            </p>
+            <ul class="list">
+              <li>Comfortable with HTML, CSS, JavaScript, and Bootstrap</li>
+              <li>Basic understanding of Wordpress</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>What this project demonstrates</h3>
+            <p class="muted">
+              This website demonstrates: HTML, responsive layout, navigation, a theme toggle, and small JavaScript features
+              (menu and copy-to-clipboard).
+            </p>
+            <div class="chips">
+              <span class="chip">Semantic HTML</span>
+              <span class="chip">Responsive CSS</span>
+              <span class="chip">JS</span>
+              <span class="chip">Accessibility basics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="cards">
+          <article class="cardLite">
+            <h3>Grocery Store Website</h3>
+            <p class="muted">
+              A responsive grocery store website I named 'Groco' that displays products and categories with multiple webpages and basic client-side
+              interactivity using vanilla JavaScript.
+            </p>
+            <ul class="meta">
+              <li><strong>Stack:</strong> HTML • CSS • JavaScript</li>
+              <li><strong>Features:</strong> Responsive design, DOM manipulation, interactive UI</li>
+            </ul>
+            <div class="links">
+              <span>Academic Project</span>
+            </div>
+          </article>
+
+          <article class="cardLite">
+            <h3>Designer's News Webpage</h3>
+            <p class="muted">
+              A news-style webpage focused on design trends and notable designers, built using Bootstrap for layout
+              and responsiveness.
+            </p>
+            <ul class="meta">
+              <li><strong>Stack:</strong> HTML • CSS • Bootstrap</li>
+              <li><strong>Features:</strong> Grid system, responsive components, clean typography</li>
+            </ul>
+            <div class="links">
+              <span>Academic Project</span>
+            </div>
+          </article>
+
+          <article class="cardLite">
+            <h3>Portfolio Website</h3>
+            <p class="muted">
+              This personal portfolio website created as a 300 level Computer Science assignment to demonstrate
+              semantic HTML, responsive CSS, and basic JavaScript interactions.
+            </p>
+            <ul class="meta">
+              <li><strong>Stack:</strong> HTML • CSS • JavaScript</li>
+              <li><strong>Features:</strong> Theme toggle, mobile navigation, basic form handling</li>
+            </ul>
+            <div class="links">
+              <span>Academic Project Assignment</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="panel">
+            <h3>Technical</h3>
+            <ul class="list">
+              <li>HTML5 (semantic structure)</li>
+              <li>CSS (Flexbox/Grid, responsive design)</li>
+              <li>JavaScript (DOM, events, basic logic)</li>
+              <li>Git basics</li>
+              <li>SQL basics</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Soft skills</h3>
+            <ul class="list">
+              <li>Communication</li>
+              <li>Teamwork</li>
+              <li>Time management</li>
+              <li>Problem-solving mindset</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="panel">
+          <div class="edu">
+            <div>
+              <div class="edu__title">B.Sc. Computer Science</div>
+              <div class="muted">300 Level • Bowen University</div>
+            </div>
+            |<br>|
+            <div class="edu__right muted">
+              <div>Expected Graduation: (Year)</div>
+              <div>Key Courses: DSA, DBMS, OS, CN</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="grid2">
+          <div class="panel">
+            <div class="row">
+              <span class="k">Email</span><span class="v"><a href="mailto:stephanie.onyedineke@gmail.com">stephanie.onyedineke@gmail.com</a>
+              </span>
+            </div>
+            <div class="row">
+              <span class="k">Phone</span><span class="v"><a href="tel:+2349131865444">+234 9131865444</a>
+               or
+              <a href="tel:+2349022494414">+234 9022494414 </a>
+              </span>
+            </div>
+            <div class="row">
+              <span class="k">GitHub</span><span class="v"><a href="#" aria-label="GitHub profile link placeholder">github.com/yourhandle</a>
+              </span>
+            </div>
+          </div>
+
+          <form class="panel form" id="contactForm">
+            <h3>Send a message</h3>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="sample@example.com" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Write a short message..." required></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Submit</button>
+            <p class="tiny muted" id="formNote">This is a front-end demo webpage with no backend. It will show an alert.</p>
+          </form>
+        </div>
+
+        <footer class="footer">
+          <span>© <span id="year"></span> Stephanie Onyedineke</span>
+          <span class="muted">300L CSC assignment</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
