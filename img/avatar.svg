@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 256 256"
+     width="256"
+     height="256"
+     role="img"
+     aria-label="Profile photo">
+
+  <!-- Rounded clipping mask -->
+  <defs>
+    <clipPath id="clip">
+      <rect x="0" y="0" width="256" height="256" rx="64" ry="64"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="256" height="256" fill="#e5e7eb"/>
+
+  <!-- Embedded photo -->
+  <image
+    href="avatar-photo.jpeg"
+    x="0"
+    y="0"
+    width="256"
+    height="256"
+    preserveAspectRatio="xMidYMid slice"
+    clip-path="url(#clip)" />
+</svg>
